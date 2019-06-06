@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 4em;
+    background: rgba(173, 169, 169, 0.664);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8em;
+
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+  
+   
+}
+
+
+.result1{
+    justify-self: center;
+ 
+  
+}
+
+#note1{
+   
+
+    list-style: none;
+    margin-left: 35%;
+    padding-top: 5%;
+   
+}
+#note2{
+    
+    list-style: none;
+    margin-left: 35%;
+    padding-top: 5%;
+}
+
+
+
+.member1{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    background-image: url('img/piece.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+    
+    
+}
+
+
+.member2{
+    display: grid;
+    max-height: 500px;
+    background-image: url('img/piece.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: -1;
+    
+    
+}
+
+.result2{
+    justify-self: center;
+  
+}
+#other{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+}
+
+#message{
+    margin: auto;
+    margin-bottom: 5%;
+}
+#reload{
+   justify-self: center;
+}
+.dice{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+}
+.dice > img{
+
+    width: 150px;
+    height: 150px;
+}
+
+#cube:active{
+
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+ 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-5deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-10deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
